@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_Project.InfoPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Description" TextColor="#3498db" FontSize="24" Margin="20, 40"/>
+            <Label Text="This app is a physics science project. In this project, the data from the solar panel is sent via bluetooth to this mobile application." Margin="20, 40" FontSize="19" FontAttributes="Italic" FontFamily="Roboto"/>
+            <Frame BackgroundColor="#3498db" Padding="10"  HasShadow="False" VerticalOptions="EndAndExpand">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <ImageButton x:Name="bluetoothButton" Source="https://cdn-icons-png.flaticon.com/128/566/566236.png" BackgroundColor="Transparent" Grid.Column="0" HeightRequest="25" Clicked="bluetoothButton_Clicked"/>
+                    <ImageButton x:Name="homeButton" Source="https://cdn-icons-png.flaticon.com/128/25/25694.png" BackgroundColor="Transparent"  Grid.Column="1"   HeightRequest="29" Clicked="homeButton_Clicked"/>
+
+                </Grid>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
